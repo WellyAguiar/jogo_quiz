@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #3a3030; /* Fundo mais escuro */
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #c7a4ae, #c9bd9e, #b0d3a2, #9dcacc, #bc9ac6, #c49ca7);
+    background-size: 600% 600%;
+    animation: gradient 10s infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container canvas {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo do canvas mais escuro */
+    border-radius: 10px; /* Bordas arredondadas para o canvas */
+    padding: 10px; /* Espaçamento interno para o canvas */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+h1 {
+    font-size: 32px;
+    color: #ff3e75; /* Rosa */
+    margin-bottom: 30px;
+}
+
+#question-container {
+    margin-top: 40px;
+}
+
+#options-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 14px 28px;
+    font-size: 20px;
+    background-color: #4a90e2; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 12px 0;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff3e75; /* Rosa ao passar o mouse */
+}
+
+button:focus {
+    outline: none;
+}
+
+#next-button {
+    background-color: #47ff00; /* Verde */
+}
+
+#next-button:hover {
+    background-color: #00f7ff; /* Azul claro ao passar o mouse */
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #c400ff; /* Roxo */
+}
+
+#restart-button {
+    padding: 14px 28px;
+    font-size: 20px;
+    background-color: #ffba00; /* Amarelo */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.2s;
+}
+
+#restart-button:hover {
+    background-color: #ff3e75; /* Rosa ao passar o mouse */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz de Perguntas</h1>
+        <div id="level-selection">
+            <label for="level">Selecione o nível de dificuldade:</label>
+            <select id="level">
+                <option value="easy">Fácil</option>
+                <option value="medium">Médio</option>
+                <option value="hard">Difícil</option>
+            </select>
+        </div>
+        <div id="question-container">
+            <p id="question-text">Pergunta vai aparecer aqui</p>
+        </div>
+        <div id="options-container">
+            <!-- Opções de resposta serão adicionadas dinamicamente aqui -->
+        </div>
+        <button id="next-button">Próxima Pergunta</button>
+        <button id="restart-button">Reiniciar</button>
+        <p id="result">Resultado vai aparecer aqui</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
